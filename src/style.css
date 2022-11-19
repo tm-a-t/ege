@@ -79,7 +79,7 @@ blockquote + blockquote {
     margin-top: -1rem;
 }
 
-li > blockquote:last-child, li > ol:last-child, li > ul:last-child {
+li > blockquote, li > ol, li > ul {
   margin-bottom: 0;
 }
 
