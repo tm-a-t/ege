@@ -1,0 +1,28 @@
+{
+  "name": "ege",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "hammerjs": "^2.0.8",
+    "lodash.debounce": "^4.0.8",
+    "markdown-it-attrs": "^4.1.4",
+    "markdown-it-bracketed-spans": "^1.0.1",
+    "markdown-it-custom-block": "^0.1.2",
+    "vue": "^3.2.37",
+    "vue-router": "^4.1.5"
+  },
+  "devDependencies": {
+    "@rollup/pluginutils": "^4.2.1",
+    "@vitejs/plugin-vue": "^3.1.0",
+    "happy-dom": "^7.4.0",
+    "vite": "^3.1.0",
+    "vite-plugin-md": "^0.20.4",
+    "vite-plugin-pages": "^0.26.0"
+  }
+}
