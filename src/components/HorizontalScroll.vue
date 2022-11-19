@@ -3,6 +3,7 @@ import Hammer from 'hammerjs';
 import {computed, ref, onMounted, defineAsyncComponent, watch} from 'vue';
 import {useRoute, useRouter} from 'vue-router';
 import debounce from 'lodash.debounce';
+import PageWrapper from './PageWrapper.vue'
 
 const props = defineProps({order: Array}),
     router = useRouter(),
@@ -245,14 +246,10 @@ let componentGetters = props.order.map(name => computed(() => {
 <template>
   <div id="rendered-items-flexbox" :class="transitionClass" :style="{transform: transformStyle}">
     <div v-for="item in renderedItems" :id="item.id" :key="item.id" class="rendered-item vertical-scroll">
-      <div class="content-container">
-        <router-link to="/ege" class="button-link">На главную</router-link>
-        <component :is="componentGetters[item.index].value" class="item"></component>
-        <div class="end-button">
-          <router-link v-if="item.index < props.order.length - 1" :to="'/ege/' + props.order[item.index + 1]" class="button-link">Дальше</router-link>
-          <router-link v-else to="/ege" class="button-link">На главную</router-link>
-        </div>
-      </div>
+      <PageWrapper
+        :component="componentGetters[item.index].value"
+        :next-route="item.index < props.order.length - 1 ? props.order[item.index + 1] : undefined"
+      />
     </div>
   </div>
 
