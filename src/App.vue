@@ -1,6 +1,6 @@
 <script setup>
 import {computed} from "vue";
-import {useRoute, useRouter} from "vue-router";
+import {useRoute} from "vue-router";
 import HorizontalScroll from "./components/HorizontalScroll.vue";
 
 const route = useRoute();
@@ -13,6 +13,7 @@ let scroll_order = [
   'essay',
   'styles',
   'types',
+  'figures',
   'roots',
   'verbs',
   'ne',
@@ -23,7 +24,6 @@ let scroll_order = [
   'geo',
   'lexical',
   'speech',
-  'figures',
   'grammar',
 ];
 </script>
