@@ -6,8 +6,8 @@
   line-height: 28px;
   font-weight: 400;
 
-  color: rgba(0, 0, 0, 0.87);
-  background-color: #e8e8ff;
+  color: var(--text-color);
+  background-color: var(--background-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,7 +15,9 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --accent: #6e6ee0;
+  --text-color: rgba(0, 0, 0, 0.87);
+  --accent-color: #6e6ee0;
+  --background-color: #e8e8ff;
 }
 
 ::selection {
@@ -126,7 +128,7 @@ hr {
 
 em {
   font-style: normal;
-  color: var(--accent);
+  color: var(--accent-color);
 }
 
 button {
@@ -200,16 +202,16 @@ button:focus-visible {
 }
 
 .rus-subject {
-  border-bottom: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .rus-predicate {
-  border-bottom: 5px double var(--accent);
+  border-bottom: 5px double var(--accent-color);
 }
 
 .rus-participle {
   padding: 1px 1px 2px;
   margin: -1px 0 -2px;
-  border-left: 2px solid var(--accent);
-  border-right: 2px solid var(--accent);
+  border-left: 2px solid var(--accent-color);
+  border-right: 2px solid var(--accent-color);
 }
