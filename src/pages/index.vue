@@ -14,9 +14,6 @@
     <router-link to="/ege/essay" class="button-link">Сочинение</router-link>
     <router-link to="/ege/styles" class="button-link">Стили речи</router-link>
     <router-link to="/ege/types" class="button-link">Типы речи</router-link>
-    <router-link to="/ege/figures" class="button-link">Средства художественной выразительности <em>№26</em></router-link>
-    <router-link to="/ege/punctuation" class="button-link button-link-disabled">Пунктуация <em>№21</em></router-link>
-    <router-link to="/ege/pro-forms" class="button-link button-link-disabled">Разряды местоимений</router-link>
   </div>
 
   <div class="block">
@@ -40,6 +37,13 @@
     <router-link to="/ege/lexical" class="button-link">Лексические нормы</router-link>
     <router-link to="/ege/speech" class="button-link">Речевые ошибки</router-link>
     <router-link to="/ege/grammar" class="button-link">Грамматические и синтаксические ошибки <em>№8</em></router-link>
+  </div>
+
+  <div class="block">
+    <div class="block-title">Прочее</div>
+    <router-link to="/ege/figures" class="button-link">Средства художественной выразительности <em>№26</em></router-link>
+    <router-link to="/ege/punctuation" class="button-link button-link-disabled">Пунктуация <em>№21</em></router-link>
+    <router-link to="/ege/pro-forms" class="button-link button-link-disabled">Разряды местоимений</router-link>
   </div>
 
   <p class="credits">

@@ -39,7 +39,6 @@ let scroll_order = [
   'essay',
   'styles',
   'types',
-  'figures',
   'roots',
   'verbs',
   'ne',
@@ -51,6 +50,7 @@ let scroll_order = [
   'lexical',
   'speech',
   'grammar',
+  'figures',
 ];
 
 const currentIndex = computed(() => {
