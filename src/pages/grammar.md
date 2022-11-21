@@ -10,7 +10,7 @@
 }
 
 .correct:before, .incorrect:before {
-  color: var(--accent);
+  color: var(--accent-color);
   float: left;
   position: relative;
   right: 1.3rem;

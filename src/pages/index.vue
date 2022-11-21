@@ -15,7 +15,7 @@
     <router-link to="/ege/styles" class="button-link">Стили речи</router-link>
     <router-link to="/ege/types" class="button-link">Типы речи</router-link>
     <router-link to="/ege/figures" class="button-link">Средства художественной выразительности <em>№26</em></router-link>
-    <router-link to="/ege/punctuation" class="button-link button-link-disabled">Пунктуация</router-link>
+    <router-link to="/ege/punctuation" class="button-link button-link-disabled">Пунктуация <em>№21</em></router-link>
     <router-link to="/ege/pro-forms" class="button-link button-link-disabled">Разряды местоимений</router-link>
   </div>
 
@@ -44,7 +44,7 @@
 
   <p class="credits">
     <span>Рассказала Марина Юрьевна,</span>
-    <span>законспектировала очаровательная Яна&nbsp;Решетникова,</span>
+    <span>законспектировала милая Яна&nbsp;Решетникова,</span>
     <span>сверстал <a href="https://tmat.me" target="_blank">Артём Иванов</a>.</span>
   </p>
 

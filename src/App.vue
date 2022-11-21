@@ -11,6 +11,7 @@ const routeName = computed(() => {
 })
 
 const title = computed(() => route.meta.title ? route.meta.title + ' в ЕГЭ' : 'ЕГЭ по русскому')
+const description = computed(() => routeName.value ? 'Вся теория к ЕГЭ по русскому: тексты, орфография, языковые нормы.' : 'Вся теория: тексты, орфография, языковые нормы.')
 
 useHead(computed(() => ({
   title: title.value,
@@ -20,9 +21,17 @@ useHead(computed(() => ({
       content: title.value,
     },
     {
+      name: 'description',
+      content: description.value,
+    },
+    {
+      name: 'og:description',
+      content: description.value,
+    },
+    {
       name: 'og:image',
       content: routeName.value ? '' : 'https://tmat.me/ege/og-image.png',
-    }
+    },
   ]
 })))
 
