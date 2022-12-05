@@ -1,13 +1,13 @@
 <script setup>
-import { computed, defineAsyncComponent } from "vue";
-import { useRoute } from "vue-router";
-import PageWrapper from "./components/PageWrapper.vue";
+import { computed, defineAsyncComponent } from 'vue'
+import { useRoute } from 'vue-router'
+import PageWrapper from './components/PageWrapper.vue'
 import { useHead } from '@vueuse/head'
 
-const route = useRoute();
+const route = useRoute()
 
 const routeName = computed(() => {
-  return (route.name || '').substring(4); // delete ege- prefix
+  return (route.name || '').substring(4) // delete ege- prefix
 })
 
 const title = computed(() => route.meta.title ? route.meta.title + ' в ЕГЭ' : 'ЕГЭ по русскому')
@@ -32,7 +32,7 @@ useHead(computed(() => ({
       name: 'og:image',
       content: routeName.value ? '' : 'https://tmat.me/ege/og-image.png',
     },
-  ]
+  ],
 })))
 
 let scroll_order = [
@@ -51,14 +51,14 @@ let scroll_order = [
   'speech',
   'grammar',
   'figures',
-];
+]
 
 const currentIndex = computed(() => {
-  return scroll_order.indexOf(routeName.value);
+  return scroll_order.indexOf(routeName.value)
 })
 
 const HorizontalScroll = defineAsyncComponent(async () => {
-  return await import("./components/HorizontalScroll.vue")
+  return await import('./components/HorizontalScroll.vue')
 })
 </script>
 

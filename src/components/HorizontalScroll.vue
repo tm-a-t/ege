@@ -2,7 +2,7 @@
 import Hammer from 'hammerjs';
 import {computed, ref, onMounted, defineAsyncComponent, watch} from 'vue';
 import {useRoute, useRouter} from 'vue-router';
-import debounce from 'lodash.debounce';
+import debounce from 'lodash/debounce';
 import PageWrapper from './PageWrapper.vue'
 
 const props = defineProps({order: Array}),

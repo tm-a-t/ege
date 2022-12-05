@@ -1,4 +1,4 @@
-<route> { meta: { title: "Сочинение" } } </route> 
+<route> { meta: { title: "Сочинение" } } </route>
 
 <style scoped>
 .graph {
